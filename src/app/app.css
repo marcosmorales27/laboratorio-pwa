@@ -1,0 +1,17 @@
+body {
+  background: #f4f4f4;
+}
+
+.card {
+  border-radius: 15px;
+}
+
+.card-header {
+  background-color: #0f1825;
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.list-group-item span {
+  cursor: pointer;
+}

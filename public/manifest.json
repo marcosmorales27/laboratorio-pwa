@@ -1,0 +1,53 @@
+{
+  "name": "gestor de actividades pwa",
+  "short_name": "taskpwa",
+  "description": "Aplicación para administrar tareas con soporte PWA y funcionamiento sin conexión.",
+  "theme_color": "black",
+  "background_color": "black",
+  "display": "standalone",
+  "orientation": "portrait",
+  "scope": "./",
+  "start_url": "./",
+  "icons": [
+    {
+      "src": "icons/ESPE.png",
+      "sizes": "any",
+      "type": "image/png"
+    },
+    {
+      "src": "icons/ESPE.png",
+      "sizes": "any",
+      "type": "image/png"
+    },
+    {
+      "src": "icons/ESPE.png",
+      "sizes": "any",
+      "type": "image/png"
+    },
+    {
+      "src": "icons/ESPE.png",
+      "sizes": "any",
+      "type": "image/png"
+    },
+    {
+      "src": "icons/ESPE.png",
+      "sizes": "any",
+      "type": "image/png"
+    },
+    {
+      "src": "icons/ESPE.png",
+      "sizes": "any",
+      "type": "image/png"
+    },
+    {
+      "src": "icons/ESPE.png",
+      "sizes": "any",
+      "type": "image/png"
+    },
+    {
+      "src": "icons/ESPE.png",
+      "sizes": "any",
+      "type": "image/png"
+    }
+  ]
+}
