@@ -44,7 +44,7 @@ jobs:
 
     # ejecutar pruebas
     - name: Run tests
-      run: npm test -- --watch=false --browsers=ChromeHeadless
+      run: npm test -- --run
 
 
     # compilar aplicación Angular
