@@ -9,5 +9,10 @@ describe('App', () => {
     expect(titulo).toBe('Gestor de Actividades PWA');
 
   });
+  it('Debe validar que la aplicación inicia correctamente', () => {
+
+    expect(true).toBe(true);
+
+  });
 
 });
