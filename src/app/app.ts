@@ -15,6 +15,8 @@ interface Tarea {
   styleUrl: './app.css'
 })
 export class App implements OnInit {
+  
+  titulo = 'Gestor de Actividades PWA';
 
   nuevaTarea = '';
 

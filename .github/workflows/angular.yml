@@ -1,0 +1,52 @@
+name: Angular CI
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+
+
+jobs:
+
+  build:
+
+    runs-on: ubuntu-latest
+
+    strategy:
+      matrix:
+        node-version:
+          - 20
+          - 22
+
+
+    steps:
+
+    # descargar código del repositorio
+    - name: Checkout repository
+      uses: actions/checkout@v4
+
+
+    # instalar Node
+    - name: Setup Node.js
+      uses: actions/setup-node@v4
+      with:
+        node-version: ${{ matrix.node-version }}
+        cache: npm
+
+
+    # instalar dependencias
+    - name: Install dependencies
+      run: npm install
+
+
+    # ejecutar pruebas
+    - name: Run tests
+      run: npm test -- --watch=false --browsers=ChromeHeadless
+
+
+    # compilar aplicación Angular
+    - name: Build Angular application
+      run: npm run build
